@@ -7,7 +7,7 @@
 }
 
 body {
-    background-color: rgb(246, 246, 244);
+    background-color: var(--bg-pagina);
     color: rgb(56, 86, 113);
     font-family: "Cabin", sans-serif;
     font-weight: 400;
@@ -139,4 +139,55 @@ footer {
     background-color: #243646;
     color: #ffffff;
     margin-top: 2rem;
+}
+body.escuro {
+    background-color: #121d24;
+    color: #e0e0e0;
+}
+body.escuro h2 {
+    color: #ffffff;
+    border-bottom-color: #ccd595;
+}
+body.escuro .unidade-card {
+    background-color: #1c2a35;
+    color: #e0e0e0;
+}
+body.escuro .unidade-card h3 {
+    color: #ccd595;
+}
+body.escuro address a {
+    color: #ccd595; 
+}
+body.escuro .secao-menu {
+    background-color: #1c2a35;
+    color: #e0e0e0;
+}
+body.escuro .categoria-menu h3 {
+    background-color: #385671;
+    color: #ffffff;
+}
+body.escuro img {
+    border-color: #ccd595;
+}
+#btn-tema {
+    background-color: #ccd595;  
+    color: #172b3f;             
+    border: 2px solid #243646;  
+    padding: 8px 16px;          
+    border-radius: 20px;        
+    font-weight: bold;          
+    font-family: inherit;       
+    cursor: pointer;            
+    margin-top: 8px;           
+}
+body.escuro #btn-tema {
+    background-color: #385671;
+    color: #ffffff;
+    border-color: #ccd595;
+}
+#btn-tema:hover {
+    background-color: #b7c27d;  
+}
+body.escuro #btn-tema:hover {
+    background-color: #2c445a;
 }
