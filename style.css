@@ -134,11 +134,83 @@ address a {
 }
 
 footer {
-    text-align: center;
-    padding: 1.5rem;
     background-color: #243646;
     color: #ffffff;
-    margin-top: 2rem;
+    padding: 2.5rem 1rem 1rem 1rem;
+    margin-top: 3rem;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer-coluna {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-coluna h3 {
+    color: #ccd595;
+    margin-bottom: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.footer-coluna h4 {
+    color: #ccd595;
+    margin-bottom: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.footer-coluna p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.footer-coluna ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-coluna ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-coluna a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-coluna a:hover {
+    color: #ccd595;
+    text-decoration: underline;
+}
+
+.redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+.footer-bottom {
+    max-width: 1100px;
+    margin: 2rem auto 0 auto;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    font-size: 0.85rem;
+    color: #d0dbe5;
+}
+
+body.escuro footer {
+    background-color: #121d24;
+    border-top: 1px solid #1c2a35;
 }
 body.escuro {
     background-color: #121d24;
@@ -190,4 +262,7 @@ body.escuro #btn-tema {
 }
 body.escuro #btn-tema:hover {
     background-color: #2c445a;
+}
+body, .unidade-card, .secao-menu {
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
