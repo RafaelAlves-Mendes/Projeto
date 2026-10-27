@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     background-color: var(--bg-pagina);
     color: rgb(56, 86, 113);
@@ -184,11 +183,16 @@ footer {
     color: #ffffff;
     text-decoration: none;
     font-size: 0.95rem;
+    display: flex;            
+    align-items: center;
+    gap: 0.5rem;               
 }
-
 .footer-coluna a:hover {
     color: #ccd595;
     text-decoration: underline;
+}
+body.escuro .footer-coluna a {
+    color: #e0e0e0;
 }
 
 .redes-sociais {
@@ -196,6 +200,11 @@ footer {
     flex-direction: column;
     gap: 0.5rem;
 }
+.redes-sociais i {
+    font-size: 1.2rem;
+    width: 20px;
+}
+
 
 
 .footer-bottom {
@@ -265,4 +274,33 @@ body.escuro #btn-tema:hover {
 }
 body, .unidade-card, .secao-menu {
     transition: background-color 0.5s ease, color 0.5s ease;
+}
+#btn-topo {
+    display: none;                
+    position: fixed;              
+    bottom: 20px;                 
+    right: 20px;                  
+    z-index: 99;                 
+    background-color: #243646;
+    color: #ffffff;
+    border: 2px solid #ccd595;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+#btn-topo:hover {
+    background-color: #172b3f;
+    transform: scale(1.1);       
+}
+body.escuro #btn-topo {
+    background-color: #ccd595;
+    color: #121d24;
+    border-color: #121d24;
+}
+
+body.escuro #btn-topo:hover {
+    background-color: #b7c27d;
 }
